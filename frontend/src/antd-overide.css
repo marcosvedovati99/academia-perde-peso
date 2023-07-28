@@ -1,0 +1,30 @@
+.ant-btn-primary {
+  background-color: #f84a15;
+  border-color: #f84a15;
+}
+.ant-btn-primary:hover {
+  background-color: #ff754c !important;
+  border-color: #ff754c;
+}
+
+
+.ant-btn-link {
+  color: #ff754c !important;
+}
+.ant-btn-link:hover {
+  color: #ff7300 !important;
+}
+
+
+.ant-layout-header,.ant-menu-root {
+  background-color: #ff754c;
+  color: #ffffff;
+}
+.ant-menu-item-selected {
+  background-color: #cd3304 !important;
+}
+
+.ant-btn-dangerous {
+  color: #222 !important;
+  font-weight: bolder;
+}

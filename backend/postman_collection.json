@@ -1,0 +1,551 @@
+{
+	"info": {
+		"_postman_id": "3867bf0a-9de5-4a31-bca5-383c82685f64",
+		"name": "Projeto Final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18547865"
+	},
+	"item": [
+		{
+			"name": "Aluno",
+			"item": [
+				{
+					"name": "Cadastrar aluno",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Nome do Aluno\",\r\n    \"sexo\": \"M\",\r\n    \"data_nascimento\": \"2000-01-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev}}:3000/aluno",
+							"host": [
+								"{{dev}}"
+							],
+							"port": "3000",
+							"path": [
+								"aluno"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Alunos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}:3000/aluno",
+							"host": [
+								"{{dev}}"
+							],
+							"port": "3000",
+							"path": [
+								"aluno"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Aluno",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}:3000/aluno/1",
+							"host": [
+								"{{dev}}"
+							],
+							"port": "3000",
+							"path": [
+								"aluno",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Aluno",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}:3000/aluno/1",
+							"host": [
+								"{{dev}}"
+							],
+							"port": "3000",
+							"path": [
+								"aluno",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Aluno",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Nome do Aluno Atualizado\",\n    \"sexo\": \"M\",\n    \"data_nascimento\": \"2000-01-01\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev}}:3000/aluno/1",
+							"host": [
+								"{{dev}}"
+							],
+							"port": "3000",
+							"path": [
+								"aluno",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Professor",
+			"item": [
+				{
+					"name": "Cadastrar Professor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Nome do Professor\",\r\n    \"login\": \"professor\",\r\n    \"senha\": \"senha123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev}}:3000/professor",
+							"host": [
+								"{{dev}}"
+							],
+							"port": "3000",
+							"path": [
+								"professor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Professores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}:3000/professor",
+							"host": [
+								"{{dev}}"
+							],
+							"port": "3000",
+							"path": [
+								"professor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Professor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}:3000/professor/1",
+							"host": [
+								"{{dev}}"
+							],
+							"port": "3000",
+							"path": [
+								"professor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Professor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}:3000/professor/3",
+							"host": [
+								"{{dev}}"
+							],
+							"port": "3000",
+							"path": [
+								"professor",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Professor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Nome do Professor Atualizado\",\n    \"login\": \"professor\",\n    \"senha\": \"senha123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev}}:3000/professor/1",
+							"host": [
+								"{{dev}}"
+							],
+							"port": "3000",
+							"path": [
+								"professor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Avaliação",
+			"item": [
+				{
+					"name": "Listar Avaliacao",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}:3000/avaliacao",
+							"host": [
+								"{{dev}}"
+							],
+							"port": "3000",
+							"path": [
+								"avaliacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Avaliacao",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}:3000/avaliacao/1",
+							"host": [
+								"{{dev}}"
+							],
+							"port": "3000",
+							"path": [
+								"avaliacao",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Avaliacao por Aluno",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}:3000/avaliacao/aluno/10",
+							"host": [
+								"{{dev}}"
+							],
+							"port": "3000",
+							"path": [
+								"avaliacao",
+								"aluno",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Avaliacao",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}:3000/avaliacao/1",
+							"host": [
+								"{{dev}}"
+							],
+							"port": "3000",
+							"path": [
+								"avaliacao",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Avaliacao",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_aluno\": 1,\n    \"id_professor\": 1,\n    \"data_avaliacao\": \"2023-07-19\",\n    \"peso\": 70.5,\n    \"altura\": 1.75\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev}}:3000/avaliacao/1",
+							"host": [
+								"{{dev}}"
+							],
+							"port": "3000",
+							"path": [
+								"avaliacao",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar avaliação",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_aluno\": 1,\r\n    \"id_professor\": 1,\r\n    \"data_avaliacao\": \"2023-07-19\",\r\n    \"peso\": 70.5,\r\n    \"altura\": 1.75\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/avaliacao/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"avaliacao",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Classificacao",
+			"item": [
+				{
+					"name": "Listar Classificação",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}:3000/classificacao",
+							"host": [
+								"{{dev}}"
+							],
+							"port": "3000",
+							"path": [
+								"classificacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Classificação",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}:3000/classificacao/1",
+							"host": [
+								"{{dev}}"
+							],
+							"port": "3000",
+							"path": [
+								"classificacao",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Classificação",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}:3000/classificacao/1",
+							"host": [
+								"{{dev}}"
+							],
+							"port": "3000",
+							"path": [
+								"classificacao",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Classificação",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"faixa_1\": 0,\n    \"faixa_2\": 5,\n    \"situacao\": \"Baixa\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev}}:3000/classificacao/1",
+							"host": [
+								"{{dev}}"
+							],
+							"port": "3000",
+							"path": [
+								"classificacao",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar classificação",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"faixa_1\": 0,\r\n    \"faixa_2\": 5,\r\n    \"situacao\": \"Baixa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/classificacoes/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"classificacoes",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login - Professor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"login\": \"anajulia123\",\n    \"senha\": \"anajulia123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{dev}}:3000/professor/login",
+					"host": [
+						"{{dev}}"
+					],
+					"port": "3000",
+					"path": [
+						"professor",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "dev",
+			"value": "http://localhost",
+			"type": "string"
+		}
+	]
+}
